@@ -4,7 +4,7 @@ module.exports = function (grunt) {
     connect: {
       server: {
         options: {
-          port: 9001,
+          port: 9000,
           base: 'public/'
         }
       }
@@ -13,7 +13,7 @@ module.exports = function (grunt) {
       project: {
         files: ['public/**/*.js', 'public/**/*.html', 'public/**/*.json', 'public/**/*.css'],
         options: {
-          livereload: 35730
+          livereload: true
         }
       }
     }
