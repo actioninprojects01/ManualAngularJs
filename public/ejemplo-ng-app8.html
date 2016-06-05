@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="manual">
+<head>
+	<meta charset="utf-8">
+	<title>manual</title>
+	<script src="js/lib/angular.min.js"></script>
+	<script src="js/ejemplo-ng-app8.js"></script>
+</head>
+<body>
+  <div ng-controller="MyCtrl">
+    <button class="btn" ng-click="toggle()">Toggle 1</button>
+    <p ng-show="visible">Hello World!</p>
+    <p ng-show="visible">Hello World2!</p>
+    <input type="text" name="entrada" ng-show="visible">
+  </div>
+  
+  <div ng-controller="MyCtrl2">
+    <button class="btn" ng-click="toggle()">Toggle 2</button>
+    <p ng-show="visible">Hello World!</p>
+    <p ng-show="visible">Hello World2!</p>
+    <input type="text" name="entrada" ng-show="visible">
+  </div>
+  
+</body>
+</html>

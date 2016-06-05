@@ -1,0 +1,32 @@
+<html>
+<head>
+  <script src="js/lib/angular.min.js"></script>
+</script>
+</head>
+<body ng-app>
+
+  <div ng-repeat="n in [1, 3, 'jose', 'pedro'] track by $index">
+    {{n}}
+  </div>
+
+  <div ng-init="alumnos = [
+    {nombre:'Paul', edad:12},
+    {nombre:'Carlos', edad:13},
+    {nombre:'Jan', edad:14},
+    {nombre:'Ana', edad:15},
+    {nombre:'Victor', edad:16}
+    ]">
+    <ul>
+      <li ng-repeat="alumno in alumnos">
+       <primero ng-if="$first">Primero</primero>
+       <ultimo ng-if="$last">final</ultimo>
+        <par ng-if="$odd">Par</par>
+        <impar ng-if="$even">Impar</impar>
+        <intermedio ng-if="$middle">Intermedio</intermedio>
+        
+        {{alumno.nombre}}: {{alumno.edad}} años
+      </li>
+    </ul>
+  </div   
+</body>
+</html>

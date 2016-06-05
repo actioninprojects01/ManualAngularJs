@@ -1,0 +1,22 @@
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.js">
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/ejemplo-ng-app10.css">
+</head>
+<body ng-app>
+	<p ng-class="{strike: deleted, bold: important, 'has-error': error}">Map Syntax Example</p>
+	<label>
+		<input type="checkbox" ng-model="deleted">
+		deleted (apply "strike" class)
+	</label><br>
+	<label>
+		<input type="checkbox" ng-model="important">
+		important (apply "bold" class)
+	</label><br>
+	<label>
+		<input type="checkbox" ng-model="error">
+		error (apply "has-error" class)
+	</label>
+</body>
+</html>
